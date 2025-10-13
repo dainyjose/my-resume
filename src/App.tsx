@@ -8,8 +8,10 @@ import { AboutMe } from "./Components/AboutMe";
 import { Menu } from "./Components/Menu";
 import Hero from "./Components/Hero";
 
-import { Data as dataSchema } from "./Schemas/Data";
-import { Menu as menuSchema } from "./Schemas/Menu";
+import { resumeData as dataSchema } from "./data/resumeData";
+import { Menu as menuSchema } from "./data/Menu";
+import { resumeData } from "./data/resumeData";
+import { Header } from "./Components/Header";
 
 const App = () => {
   const query = "(min-width: 968px)";
@@ -25,6 +27,12 @@ const App = () => {
   const { profile, aboutMe, skills, socialMedia, experience } = dataSchema;
   return (
     <>
+      <Header
+        name={resumeData.name}
+        role={resumeData.role}
+        location={resumeData.location}
+        social={resumeData.social}
+      />
       <Hero
         {...profile}
         {...aboutMe}

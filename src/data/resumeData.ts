@@ -1,4 +1,4 @@
-export const Data = {
+export const resumeData = {
     profile: {
         name: "Dainy Jose",
         occupation: "React Native Mobile Application Developer",
