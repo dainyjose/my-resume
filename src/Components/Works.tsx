@@ -1,6 +1,18 @@
 import { Description } from "./Description";
+interface WorkItem {
+  title: string;
+  period: string;
+  company: string;
+  description: string[];
+}
 
-export const Works = ({ works }) => {
+interface WorksProps {
+  works: WorkItem[];
+}
+
+interface SingleWorkProps extends WorkItem {}
+
+export const Works = ({ works }: WorksProps) => {
   return (
     <section
       className="work-experience section"
@@ -19,7 +31,7 @@ export const Works = ({ works }) => {
   );
 };
 
-const Work = ({ title, period, company, description }) => {
+const Work = ({ title, period, company, description }: SingleWorkProps) => {
   return (
     <div className="experience__content">
       <div className="experience__time">

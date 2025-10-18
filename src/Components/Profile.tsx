@@ -1,6 +1,24 @@
 import { BoxIcon } from "./BoxIcon";
 import { Options } from "./Options";
 
+type SocialItem = {
+  label: string;
+  name: string;
+  url: string;
+  className: string;
+};
+
+interface ProfileProps {
+  name: string;
+  occupation: string;
+  location: string;
+  email: string;
+  telephone: string;
+  image: string;
+  social: SocialItem[];
+  isMobileView: boolean;
+}
+
 export const Profile = ({
   name,
   occupation,
@@ -10,7 +28,7 @@ export const Profile = ({
   image,
   social,
   isMobileView,
-}) => {
+}: ProfileProps) => {
   return (
     <section
       className="home section"

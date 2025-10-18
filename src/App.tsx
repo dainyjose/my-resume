@@ -1,17 +1,15 @@
 import { useState, useEffect } from "react";
-import { Profile } from "./Components/Profile";
-import { Academic } from "./Components/Academic";
-import { Skills } from "./Components/Skills";
-import { Projects } from "./Components/Projects";
-import { Works } from "./Components/Works";
-import { AboutMe } from "./Components/AboutMe";
-import { Menu } from "./Components/Menu";
-import Hero from "./Components/Hero";
-
-import { resumeData as dataSchema } from "./data/resumeData";
-import { Menu as menuSchema } from "./data/Menu";
-import { resumeData } from "./data/resumeData";
 import { Header } from "./Components/Header";
+import Hero from "./Components/Hero";
+import { Menu } from "./Components/Menu";
+import { Profile } from "./Components/Profile";
+import { AboutMe } from "./Components/AboutMe";
+import { Skills } from "./Components/Skills";
+import { Works } from "./Components/Works";
+import { Academic } from "./Components/Academic";
+import { Projects } from "./Components/Projects";
+import { menuData } from "./data/Menu";
+import { resumeData } from "./data/resumeData";
 
 const App = () => {
   const query = "(min-width: 968px)";
@@ -24,20 +22,21 @@ const App = () => {
     return () => media.removeEventListener("change", listener);
   }, [matches]);
 
-  const { profile, aboutMe, skills, socialMedia, experience } = dataSchema;
+  const { profile, aboutMe, skills, socialMedia, experience } = resumeData;
   return (
     <>
       <Header
-        name={resumeData.name}
-        role={resumeData.role}
-        location={resumeData.location}
-        social={resumeData.social}
+        name={profile.name}
+        role={profile.occupation}
+        location={profile.location}
+        social={socialMedia.social}
       />
+
       <Hero
         {...profile}
         {...aboutMe}
       />
-      {!matches && <Menu {...menuSchema} />}
+      {!matches && <Menu {...menuData} />}
       <main
         className="l-main bd-container"
         id="bd-container"
@@ -50,6 +49,16 @@ const App = () => {
             <Profile
               {...profile}
               {...socialMedia}
+              isMobileView={!matches}
+            />
+            <Profile
+              name={profile.name}
+              occupation={profile.occupation}
+              location={profile.location}
+              email={profile.email}
+              telephone={profile.telephone}
+              image={profile.image}
+              social={socialMedia.social}
               isMobileView={!matches}
             />
             <AboutMe {...aboutMe} />

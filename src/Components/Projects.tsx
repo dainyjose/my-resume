@@ -1,4 +1,16 @@
-export const Projects = ({ projects }) => {
+interface ProjectItem {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string;
+  github?: string;
+}
+
+interface ProjectsProps {
+  projects: ProjectItem[];
+}
+
+export const Projects = ({ projects }: ProjectsProps) => {
   return (
     <section
       className="projects-experience section"
@@ -17,7 +29,7 @@ export const Projects = ({ projects }) => {
   );
 };
 
-const Project = ({ title, description, technologies }) => {
+const Project = ({ title, description, technologies }: ProjectItem) => {
   return (
     <div className="experience__content">
       <div className="experience__time">

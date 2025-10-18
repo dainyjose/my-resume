@@ -1,4 +1,4 @@
-export const Menu = {
+export const menuData = {
     menu: [
         {
             label: "Home",

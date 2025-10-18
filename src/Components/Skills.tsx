@@ -1,9 +1,24 @@
+interface SkillsProps {
+  technicalLabel: string;
+  softLabel: string;
+  categories: Record<string, string[]>;
+  softSkills: string[];
+}
+
+interface TechSkillProps {
+  category: string;
+  items: string[];
+}
+
+interface SkillProps {
+  skill: string;
+}
 export const Skills = ({
   technicalLabel,
   softLabel,
   categories,
   softSkills,
-}) => {
+}: SkillsProps) => {
   return (
     <>
       {/* Technical Skills */}
@@ -43,13 +58,13 @@ export const Skills = ({
   );
 };
 
-const Skill = ({ skill }) => (
+const Skill = ({ skill }: SkillProps) => (
   <li className="skills__name">
     <span className="skills__circle" /> {skill}
   </li>
 );
 
-const TechSkill = ({ category, items }) => (
+const TechSkill = ({ category, items }: TechSkillProps) => (
   <li className="skills__name">
     <span className="skills__circle"></span>
     <strong>{category}:</strong> {items.join(", ")}

@@ -1,4 +1,9 @@
-export const AboutMe = ({ label, description }) => (
+interface AboutMeProps {
+  label: string;
+  description: string;
+}
+
+export const AboutMe = ({ label, description }: AboutMeProps) => (
   <section
     className="profile section"
     id="profile"

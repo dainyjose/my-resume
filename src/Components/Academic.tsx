@@ -1,4 +1,15 @@
-export const Academic = ({ academic }) => {
+interface AcademyItem {
+  career: string;
+  date: string;
+  institution: string;
+  percentage: string;
+}
+
+interface AcademicProps {
+  academic: AcademyItem[];
+}
+
+export const Academic = ({ academic }: AcademicProps) => {
   return (
     <section
       className="academic-experience section"
@@ -17,7 +28,7 @@ export const Academic = ({ academic }) => {
   );
 };
 
-const Academy = ({ career, date, institution, percentage }) => {
+const Academy = ({ career, date, institution, percentage }: AcademyItem) => {
   return (
     <div className="education__content">
       <div className="education__time">
