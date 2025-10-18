@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { Header } from "./Components/Header";
-import Hero from "./Components/Hero";
 import { Menu } from "./Components/Menu";
 import { Profile } from "./Components/Profile";
 import { AboutMe } from "./Components/AboutMe";
@@ -10,6 +8,8 @@ import { Academic } from "./Components/Academic";
 import { Projects } from "./Components/Projects";
 import { menuData } from "./data/Menu";
 import { resumeData } from "./data/resumeData";
+import { DevBlogs } from "./Components/DevBlogs";
+import { Hobbies } from "./Components/Hobbies";
 
 const App = () => {
   const query = "(min-width: 968px)";
@@ -22,35 +22,14 @@ const App = () => {
     return () => media.removeEventListener("change", listener);
   }, [matches]);
 
-  const { profile, aboutMe, skills, socialMedia, experience } = resumeData;
+  const { profile, aboutMe, skills, socialMedia, experience, devBlogs } =
+    resumeData;
   return (
     <>
-      <Header
-        name={profile.name}
-        role={profile.occupation}
-        location={profile.location}
-        social={socialMedia.social}
-      />
-
-      <Hero
-        {...profile}
-        {...aboutMe}
-      />
       {!matches && <Menu {...menuData} />}
-      <main
-        className="l-main bd-container"
-        id="bd-container"
-      >
-        <div
-          className="resume"
-          id="area-cv"
-        >
+      <main className="l-main bd-container" id="bd-container">
+        <div className="resume" id="area-cv">
           <div className="resume__left">
-            <Profile
-              {...profile}
-              {...socialMedia}
-              isMobileView={!matches}
-            />
             <Profile
               name={profile.name}
               occupation={profile.occupation}
@@ -63,6 +42,8 @@ const App = () => {
             />
             <AboutMe {...aboutMe} />
             <Skills {...skills} />
+            <DevBlogs blogs={devBlogs} />
+            <Hobbies {...resumeData} />
           </div>
           <div className="resume__right">
             <Works {...experience} />

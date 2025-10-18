@@ -9,13 +9,13 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --title-color: #434c5e;
-  --text-color: #4c566a;
-  --text-color-light: #7b88a1;
-  --container-color: #ffffff;
-  --container-color-alt: #f7f9fb;
-  --body-color: #f2f4f8;
 
+  --title-color: #1f3a3d;
+  --text-color: #3e5c5f;
+  --text-color-light: #7ba6a8;
+  --container-color: #ffffff;
+  --container-color-alt: #e6f0f0;
+  --body-color: #f0f7f7;
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   --h1-font-size: 1.5rem;
@@ -92,18 +92,16 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #eceff4;
-  --text-color: #b5c4db;
-  --container-color: #2e3440;
-  --container-color-alt: #3b4252;
-  --body-color: #242933;
+  --title-color: #e6f0f0;
+  --text-color: #a9c0c0;
+  --container-color: #1f2a2b;
+  --container-color-alt: #2b3a3b;
+  --body-color: #121f1f;
 }
 
 /*========== Options button ==========*/
 .change-theme {
   position: absolute;
-  right: 0;
-  top: 2.2rem;
   display: flex;
   color: var(--text-color);
   font-size: var(--h2-font-size);
@@ -124,7 +122,7 @@ body.dark-theme {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.15rem;
   text-align: center;
   margin-bottom: var(--mb-3);
 }
@@ -331,7 +329,6 @@ button.generate__btn {
   text-align: justify;
 }
 .description {
-  margin-left: -0.8rem;
   z-index: 1000;
 }
 .education__content,
@@ -381,9 +378,9 @@ button.generate__btn {
   justify-content: space-between;
   display: flex;
 }
-.experience__description {
+/* .experience__description {
   text-align: justify;
-}
+} */
 
 .education__title,
 .experience__title {
@@ -430,15 +427,63 @@ button.generate__btn {
 .print {
   display: none !important;
 }
+.dev-blogs {
+  margin-top: 1rem;
+}
 
-/*========== React-Particles-JS ==========*/
-#tsparticles {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+.blogs__container {
+  display: grid;
+  gap: 1rem;
+}
+
+.blog__card {
+  background-color: var(--container-color-alt);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.blog__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.2rem;
+  color: var(--title-color);
+}
+
+.blog__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+  text-align: justify;
+}
+.blog__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.blog__link {
+  color: var(--text-color-light);
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  align-self: flex-end;
+}
+
+.blog__link:hover {
+  color: var(--title-color);
+}
+
+.hobbies__text {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 /*========== MEDIA QUERIES ==========*/
