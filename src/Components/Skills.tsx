@@ -22,19 +22,12 @@ export const Skills = ({
   return (
     <>
       {/* Technical Skills */}
-      <section
-        className="technical-skills section"
-        id="skills"
-      >
+      <section className="technical-skills section" id="skills">
         <h2 className="section-title">{technicalLabel}</h2>
         <div className="skills__content bd-grid">
           <ul className="skills__data">
             {Object.entries(categories).map(([category, items]) => (
-              <TechSkill
-                key={category}
-                category={category}
-                items={items}
-              />
+              <TechSkill key={category} category={category} items={items} />
             ))}
           </ul>
         </div>
@@ -46,10 +39,7 @@ export const Skills = ({
         <div className="skills__content bd-grid">
           <ul className="skills__data">
             {softSkills.map((skill) => (
-              <Skill
-                key={skill}
-                skill={skill}
-              />
+              <Skill key={skill} skill={skill} />
             ))}
           </ul>
         </div>
@@ -59,14 +49,11 @@ export const Skills = ({
 };
 
 const Skill = ({ skill }: SkillProps) => (
-  <li className="skills__name">
-    <span className="skills__circle" /> {skill}
-  </li>
+  <li className="skills__name">{skill}</li>
 );
 
 const TechSkill = ({ category, items }: TechSkillProps) => (
   <li className="skills__name">
-    <span className="skills__circle"></span>
     <strong>{category}:</strong> {items.join(", ")}
   </li>
 );

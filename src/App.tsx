@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
+import { resumeData } from "./data/resumeData";
+import { menuData } from "./data/MenuData";
 import { Menu } from "./Components/Menu";
 import { Profile } from "./Components/Profile";
 import { AboutMe } from "./Components/AboutMe";
 import { Skills } from "./Components/Skills";
+import { DevBlogs } from "./Components/DevBlogs";
+import { Hobbies } from "./Components/Hobbies";
 import { Works } from "./Components/Works";
 import { Academic } from "./Components/Academic";
 import { Projects } from "./Components/Projects";
-import { menuData } from "./data/Menu";
-import { resumeData } from "./data/resumeData";
-import { DevBlogs } from "./Components/DevBlogs";
-import { Hobbies } from "./Components/Hobbies";
+import { Footer } from "./Components/Footer";
 
 const App = () => {
   const query = "(min-width: 968px)";
@@ -20,10 +21,17 @@ const App = () => {
     const listener = () => setMatches(media.matches);
     media.addEventListener("change", listener);
     return () => media.removeEventListener("change", listener);
-  }, [matches]);
+  }, []);
 
-  const { profile, aboutMe, skills, socialMedia, experience, devBlogs } =
-    resumeData;
+  const {
+    profile,
+    aboutMe,
+    skills,
+    socialMedia,
+    experience,
+    devBlogs,
+    footer,
+  } = resumeData;
   return (
     <>
       {!matches && <Menu {...menuData} />}
@@ -51,6 +59,7 @@ const App = () => {
             <Projects {...experience} />
           </div>
         </div>
+        <Footer footer={footer} />
       </main>
     </>
   );

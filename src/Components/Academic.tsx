@@ -9,19 +9,13 @@ interface AcademicProps {
   academic: AcademyItem[];
 }
 
-export const Academic = ({ academic }: AcademicProps) => {
+export const Academic: React.FC<AcademicProps> = ({ academic }) => {
   return (
-    <section
-      className="academic-experience section"
-      id="education"
-    >
+    <section className="academic-experience section" id="education">
       <h2 className="section-title">Education</h2>
       <div className="education__container bd-grid">
         {academic.map((academy) => (
-          <Academy
-            key={academy.institution}
-            {...academy}
-          />
+          <Academy key={academy.institution} {...academy} />
         ))}
       </div>
     </section>

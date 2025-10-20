@@ -1,4 +1,13 @@
-export const BoxIcon = ({ label, url: initialUrl, className }) => {
+interface BoxIconProps {
+  label: string;
+  url: string;
+  className: string;
+}
+export const BoxIcon: React.FC<BoxIconProps> = ({
+  label,
+  url: initialUrl,
+  className,
+}) => {
   const WORDS_TO_REPLACE = ["mailto:", "tel:"];
   let dataPrint = WORDS_TO_REPLACE.reduce(
     (acc, word) => acc.replace(word, ""),

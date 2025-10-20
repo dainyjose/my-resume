@@ -1,19 +1,28 @@
 import { useState } from "react";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
-export const Menu = ({ menu }) => {
+interface MenuItem {
+  label: string;
+  section: string;
+  className: string;
+}
+
+interface MenuProps {
+  menu: MenuItem[];
+}
+
+export const Menu: React.FC<MenuProps> = ({ menu }) => {
   const [show, setShow] = useState(false);
 
-  const _handleActiveSection = (e) => {
-    window.location.hash = e.target.hash;
+  const _handleActiveSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    window.location.hash = (e.currentTarget as HTMLAnchorElement).hash;
     setShow(!show);
   };
 
   return (
-    <header
-      className="l-header no-print"
-      id="header"
-    >
+    <header className="l-header no-print" id="header">
       <Router>
         <nav className="nav bd-container">
           <span className="nav__logo">Menu</span>
@@ -23,10 +32,7 @@ export const Menu = ({ menu }) => {
           >
             <ul className="nav__list">
               {menu.map(({ label, section, className }) => (
-                <li
-                  className="nav__item"
-                  key={label}
-                >
+                <li className="nav__item" key={label}>
                   <NavLink
                     className="nav__link"
                     activeClassName="active-link"

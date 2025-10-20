@@ -1,73 +1,129 @@
-# React + TypeScript + Vite
+# Dainy Jose | Resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+![Portfolio Preview](./src/assets/resume_preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
 
-## React Compiler
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://dainyjose.github.io/my-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dainyjose/)
+[![Dev.to](https://img.shields.io/badge/-Dev.to-000000?style=flat&logo=dev.to&logoColor=white)](https://dev.to/dainy_jose)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/dainyjose)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ </div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## About
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A modern, responsive, and interactive online resume built with **React** and **TypeScript**. This website showcases my profile, skills, experience, projects, hobbies, and development blogs, and includes a downloadable PDF resume feature.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
+
+- Fully responsive design for desktop, tablet, and mobile.
+- Dark and light theme support.
+- Interactive navigation menu with smooth scrolling.
+- Sections included:
+  - Profile
+  - About Me
+  - Skills (Technical & Soft Skills)
+  - Experience
+  - Academic & Projects
+  - Development Blogs
+  - Hobbies
+  - Footer with social links
+- Downloadable resume as PDF.
+- Print-ready resume layout.
+
+---
+
+## Live Preview
+
+Check it out: [https://dainyjose.github.io/my-resume/](https://dainyjose.github.io/my-resume/)
+
+---
+
+## Tech Stack
+
+- **React** (Functional Components & Hooks)
+- **TypeScript** for type safety
+- **CSS Grid & Flexbox** for layout
+- **Boxicons** for icons
+- **React Router** for smooth section navigation
+
+---
+
+## Project Structure
+
+```bash
+src/
+├── Components/
+│ ├── AboutMe.tsx
+│ ├── Academic.tsx
+│ ├── DevBlogs.tsx
+│ ├── Footer.tsx
+│ ├── Hobbies.tsx
+│ ├── Menu.tsx
+│ ├── Profile.tsx
+│ ├── Projects.tsx
+│ ├── Skills.tsx
+│ └── Works.tsx
+├── data/
+│ ├── Menu.ts
+│ └── resumeData.ts
+├── App.tsx
+└── index.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+
+```bash
+git clone https://github.com/dainyjose/my-resume.git
+cd my-resume
 ```
+
+2. Install dependencies:
+
+```bash
+bun install
+```
+
+3. Start the development server:
+
+```bash
+bun run dev
+```
+
+---
+
+## Usage
+
+- Navigate sections using the menu or scroll.
+
+- Click the Download Resume button in the footer to print or save the resume as PDF.
+
+- Works on all modern browsers and mobile devices
+
+---
+
+## Customization
+
+- Update your personal info in `src/data/resumeData.ts`.
+
+- Update social links in `src/data/Menu.ts` and `resumeData.ts`.
+
+- Replace images and icons as needed in the `Components` folder.
+
+## 🧑‍💻 Author
+
+**Dainy Jose**  
+[GitHub](https://github.com/dainyjose) | [LinkedIn](https://linkedin.com/in/dainyjose)
+
+---

@@ -10,7 +10,7 @@ export const resumeData = {
   aboutMe: {
     label: "Profile",
     description:
-      "React Native & Full-Stack Mobile Application Developer with 3+ years of experience building cross-platform apps using React Native (TypeScript, Expo Bare Workflow). Experienced in integrating APIs, payment gateways, real-time tracking, and app store deployments. Passionate about building scalable, high-performance mobile solutions",
+      "React Native & Full-Stack Mobile Application Developer with 3+ years of experience building cross-platform apps using React Native (TypeScript, Expo Bare Workflow). Experienced in integrating APIs, payment gateways, real-time tracking, and app store deployments. Passionate about building scalable, high-performance mobile solutions.",
   },
   skills: {
     technicalLabel: "Technologies",
@@ -212,19 +212,45 @@ export const resumeData = {
       title: "Google Play’s 16KB Page Size Limit Explained",
       description:
         "Optimizing your Android builds for better performance and compliance with Play Store rules.",
-      url: "https://dev.to/dainyjose/understanding-google-plays-16kb-page-size-requirement-for-android-apps-23k0",
-    },
-    {
-      title: "Life of a React Native Developer",
-      description:
-        "Sharing lessons learned while building and publishing apps from scratch.",
-      url: "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-24l7",
+      url: "https://dev.to/dainyjose/understanding-google-plays-16-kb-page-size-requirement-for-android-apps-phd",
     },
     {
       title: "Push Notifications with Firebase + Notifee",
       description:
         "Step-by-step setup for implementing push notifications in React Native.",
-      url: "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-4a6p",
+      url: "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-ahl",
+    },
+    {
+      title: "Life of a React Native Developer",
+      description:
+        "Sharing lessons learned while building and publishing apps from scratch.",
+      url: "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-nnb",
     },
   ],
+  footer: {
+    developer: "Dainy Jose",
+    socials: [
+      {
+        name: "LinkedIn",
+        icon: "bx bxl-linkedin-square",
+        url: "https://www.linkedin.com/in/dainyjose",
+      },
+      {
+        name: "GitHub",
+        icon: "bx bxl-github",
+        url: "https://github.com/dainyjose",
+      },
+
+      {
+        name: "Portfolio",
+        icon: "bx bx-link",
+        url: "https://dainyjose.github.io/my-portfolio/",
+      },
+      {
+        name: "Dev.to",
+        icon: "bx bxl-dev-to",
+        url: "https://dev.to/dainyjose",
+      },
+    ],
+  },
 };
