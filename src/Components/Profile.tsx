@@ -1,5 +1,6 @@
 import { BoxIcon } from "./BoxIcon";
 import { Options } from "./Options";
+import profileImg from "../assets/dainy_jose.jpg";
 
 type SocialItem = {
   label: string;
@@ -30,15 +31,12 @@ export const Profile = ({
   isMobileView,
 }: ProfileProps) => {
   return (
-    <section
-      className="home section"
-      id="home"
-    >
+    <section className="home section" id="home">
       <Options />
       <div className="home__container bd-grid">
         <div className="home__data bd-grid">
           <img
-            src={image}
+            src={profileImg}
             alt="profile_image"
             className="home__img no-print"
           />
@@ -63,12 +61,7 @@ export const Profile = ({
             url={`tel:${telephone}`}
           />
           {true &&
-            social.map((social) => (
-              <BoxIcon
-                key={social.name}
-                {...social}
-              />
-            ))}
+            social.map((social) => <BoxIcon key={social.name} {...social} />)}
         </div>
       </div>
     </section>
