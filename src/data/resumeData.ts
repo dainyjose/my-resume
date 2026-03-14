@@ -10,14 +10,15 @@ export const resumeData = {
   aboutMe: {
     label: "Profile",
     description:
-      "React Native & Full-Stack Mobile Application Developer with 3+ years of experience building cross-platform apps using React Native (TypeScript, Expo Bare Workflow). Experienced in integrating APIs, payment gateways, real-time tracking, and app store deployments. Passionate about building scalable, high-performance mobile solutions.",
+      "React Native Mobile Application Developer with 3+ years of experience building cross-platform Android and iOS applications using React Native, TypeScript, and Expo Bare Workflow. Experienced in API integrations, payment gateways, real-time features, and Play Store/App Store deployments. Skilled in developing scalable mobile architectures using Redux, secure authentication, and performance-optimized UI. Also experienced in full-stack development using the MERN stack for backend services, POCs, and personal projects.",
   },
   skills: {
     technicalLabel: "Technologies",
     softLabel: "Skills",
     categories: {
-      "Frontend & Mobile": [
-        "React / React Native",
+      "Mobile & Frontend": [
+        "React Native",
+        "React",
         "TypeScript",
         "JavaScript",
         "Redux",
@@ -26,31 +27,28 @@ export const resumeData = {
         "Expo",
         "Vite",
       ],
-      Backend: ["Node.js", "Express.js", "Python", "Firebase", "Cloudinary"],
+      Backend: ["Node.js", "Express.js", "Firebase", "Cloudinary"],
       Database: ["MongoDB", "MySQL / SQL", "XAMPP"],
-      Testing: ["Jest"],
       "Tools & Collaboration": [
         "Git / Git Bash",
-        "npm",
-        "Bun",
         "Bitbucket",
         "Postman",
         "Jira",
         "Figma",
-        "Docker",
-        "VS Code",
-        "Android Studio",
-        "Xcode",
       ],
+      "Development Tools": ["VS Code", "Android Studio", "Xcode", "npm", "Bun"],
       "Deployment & Hosting": ["Heroku", "Netlify", "Cloudflare", "cPanel"],
-      "Platforms & OS": ["Android", "iOS", "Windows", "macOS"],
+      "Platforms & OS": ["Android", "iOS", "macOS", "Windows"],
       "Deployment Stores": ["Play Store Deployment", "App Store Deployment"],
     },
     softSkills: [
-      "Strong analytical and debugging skills",
-      "Effective cross-functional communication",
-      "Agile methodology experience",
-      "Excellent time and task management",
+      "Analytical and problem-solving skills",
+      "Debugging and troubleshooting ability",
+      "Cross-functional teamwork",
+      "Time and task management",
+      "Quick learner of new technologies",
+      "Attention to detail and code quality",
+      "Agile development experience",
     ],
   },
 
@@ -90,23 +88,17 @@ export const resumeData = {
         period: "13/03/2024 - Present",
         company: "Soverg Private Limited",
         description: [
-          "Integrated social authentication using Google, Facebook, and Apple Sign-In for seamless user onboarding.",
-
-          "Implemented location-based features (geofencing, real-time tracking, personalized services) using React Native location modules.",
-
-          "Integrated Razorpay and PayU payment gateways, handling secure transactions, webhooks, and error management.",
-
-          "Designed and deployed real-time push notifications using Firebase Cloud Messaging (FCM) to enhance user engagement.",
-
-          "Developed Redux and Context API-based state management for scalable and maintainable code.",
-
-          "Implemented Firebase Crashlytics and Analytics for monitoring, debugging, and improving user experience.",
-
-          "Wrote unit tests with Jest and React Native Testing Library to ensure code reliability.",
-
-          "Manually deployed apps to Google Play Store and Apple App Store, managing builds, certificates, and store metadata, while maintaining version control with Git and Bitbucket.",
-
-          "Collaborated with cross-functional teams using Trello, Jira, and Figma to translate designs and user stories into working applications.",
+          "Maintained and improved the existing React Native project architecture and build configurations.",
+          "Handled project upgrades and dependency updates, ensuring compliance with Google Play Store and Apple App Store policies.",
+          "Implemented social authentication using Google, Facebook, and Apple Sign-In.",
+          "Developed location-based features including geofencing and real-time tracking.",
+          "Integrated Razorpay and PayU payment gateways for secure transactions.",
+          "Implemented push notifications using Firebase Cloud Messaging (FCM).",
+          "Managed application state using Redux and Context API.",
+          "Integrated Firebase Crashlytics and Analytics for monitoring and debugging.",
+          "Optimized application performance and improved UI responsiveness.",
+          "Debugged and resolved native module and build issues across Android and iOS.",
+          "Deployed applications to Google Play Store and Apple App Store and maintained version control using Git and Bitbucket.",
         ],
       },
       {
@@ -114,8 +106,7 @@ export const resumeData = {
         period: "01/11/2022 - 29/02/2024",
         company: "Doctor(s) Note Private Limited",
         description: [
-          "Developed React Native app and website from scratch using Expo, ReactJS, NodeJS, ExpressJS.",
-
+          "Developed mobile and web applications from scratch using React Native, React.js, Node.js, and Express.js.",
           "Designed MongoDB database schemas and implemented secure JWT authentication.",
 
           "Integrated third-party APIs (SERP API) and Cloudinary for media handling.",
@@ -159,7 +150,7 @@ export const resumeData = {
         id: 1,
         title: "RN Expo Bare Template",
         description:
-          "A boilerplate project setup with Expo bare workflow and TypeScript, including configured navigation, Redux, and environment management for faster project initialization.",
+          "A boilerplate React Native project using Expo Bare Workflow and TypeScript with preconfigured navigation, Redux, and environment management for faster project initialization.",
         technologies:
           "React Native | Expo | TypeScript | Redux | React Navigation",
         github: "https://github.com/dainyjose/rn-expo-typescript-bare-template",
