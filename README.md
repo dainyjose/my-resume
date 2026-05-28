@@ -127,3 +127,11 @@ bun run dev
 [GitHub](https://github.com/dainyjose) | [LinkedIn](https://linkedin.com/in/dainyjose)
 
 ---
+
+## License
+
+© 2026 Dainy Jose. All rights reserved.
+
+⚠️ This repository is shared for portfolio and reference purposes only.
+
+Unauthorized copying, modification, redistribution, or commercial use of this project or its source code is prohibited without explicit permission from the author.
