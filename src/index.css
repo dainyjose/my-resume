@@ -452,12 +452,6 @@ button.generate__btn {
   color: var(--title-color);
 }
 
-.hobbies__text {
-  color: var(--text-color);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  text-align: justify;
-}
 /*========== FOOTER SECTION ==========*/
 .resume-footer {
   padding: 1rem 0;
