@@ -17,7 +17,7 @@
 
 ## About
 
-A modern, responsive, and interactive online resume built with **React** and **TypeScript**. This website showcases my profile, skills, experience, projects, hobbies, and development blogs, and includes a downloadable PDF resume feature.
+A modern, responsive, and interactive online resume built with **React** and **TypeScript**. This website showcases my profile, skills, experience, projects, and development blogs, and includes a downloadable PDF resume feature.
 
 ---
 
@@ -33,7 +33,6 @@ A modern, responsive, and interactive online resume built with **React** and **T
   - Experience
   - Academic & Projects
   - Development Blogs
-  - Hobbies
   - Footer with social links
 - Downloadable resume as PDF.
 - Print-ready resume layout.
@@ -65,7 +64,6 @@ src/
 │ ├── Academic.tsx
 │ ├── DevBlogs.tsx
 │ ├── Footer.tsx
-│ ├── Hobbies.tsx
 │ ├── Menu.tsx
 │ ├── Profile.tsx
 │ ├── Projects.tsx

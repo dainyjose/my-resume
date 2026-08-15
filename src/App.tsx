@@ -6,7 +6,6 @@ import { Profile } from "./Components/Profile";
 import { AboutMe } from "./Components/AboutMe";
 import { Skills } from "./Components/Skills";
 import { DevBlogs } from "./Components/DevBlogs";
-import { Hobbies } from "./Components/Hobbies";
 import { Works } from "./Components/Works";
 import { Academic } from "./Components/Academic";
 import { Projects } from "./Components/Projects";
@@ -51,7 +50,6 @@ const App = () => {
             <AboutMe {...aboutMe} />
             <Skills {...skills} />
             <DevBlogs blogs={devBlogs} />
-            <Hobbies {...resumeData} />
           </div>
           <div className="resume__right">
             <Works {...experience} />
