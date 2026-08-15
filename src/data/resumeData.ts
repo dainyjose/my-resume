@@ -1,59 +1,89 @@
 export const resumeData = {
   profile: {
     name: "Dainy Jose",
-    occupation: "React Native Mobile Application Developer",
+    occupation: "Senior Software Developer | React Native | TypeScript | Mobile Architecture",
     location: "Bangalore, India",
     email: "dainyjose.mary@gmail.com",
     telephone: "+91 8075919623",
     image: "/src/assets/dainy_jose.jpg",
   },
+
   aboutMe: {
     label: "Profile",
     description:
-      "React Native Mobile Application Developer with 3+ years of experience building cross-platform Android and iOS applications using React Native, TypeScript, and Expo Bare Workflow. Experienced in API integrations, payment gateways, real-time features, and Play Store/App Store deployments. Skilled in developing scalable mobile architectures using Redux, secure authentication, and performance-optimized UI. Also experienced in full-stack development using the MERN stack for backend services, POCs, and personal projects.",
+      "Senior Software Developer with 3+ years of professional experience building and maintaining production-grade mobile applications for Android and iOS using React Native, TypeScript, Redux, and Expo Bare Workflow. Experienced in taking features from technical planning through implementation, testing, debugging, and production release. Strong experience in mobile architecture, API integration, authentication, KYC, payments, notifications, analytics, location-based features, performance optimization, and Play Store/App Store deployments. Comfortable working across mobile and backend systems using Node.js, Express.js, Firebase, and SQL. Experienced in technical ownership, cross-functional collaboration, code reviews, and mentoring junior developers.",
   },
+
   skills: {
-    technicalLabel: "Technologies",
-    softLabel: "Skills",
+    technicalLabel: "Technical Skills",
+    softLabel: "Core Strengths",
+
     categories: {
-      "Mobile & Frontend": [
+      "Mobile Development": [
         "React Native",
-        "React",
         "TypeScript",
         "JavaScript",
         "Redux",
-        "HTML",
-        "CSS",
-        "Expo",
-        "Vite",
+        "React Navigation",
+        "Expo Bare Workflow",
       ],
-      Backend: ["Node.js", "Express.js", "Firebase", "Cloudinary"],
-      Database: ["MongoDB", "MySQL / SQL", "XAMPP"],
-      "Tools & Collaboration": [
-        "Git / Git Bash",
+
+      "Backend & APIs": [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Firebase",
+        "JWT Authentication",
+        "Socket.IO",
+      ],
+
+      Database: ["MySQL", "SQL", "MongoDB"],
+
+      Integrations: [
+        "Razorpay",
+        "PayU",
+        "Firebase Cloud Messaging",
+        "Firebase Analytics",
+        "Firebase Crashlytics",
+        "Google Maps",
+      ],
+
+      "Development & Collaboration": [
+        "Git",
         "Bitbucket",
+        "GitHub",
         "Postman",
         "Jira",
-        "Figma",
+        "VS Code",
+        "Android Studio",
+        "Xcode",
       ],
-      "Development Tools": ["VS Code", "Android Studio", "Xcode", "npm", "Bun"],
-      "Deployment & Hosting": ["Heroku", "Netlify", "Cloudflare", "cPanel"],
-      "Platforms & OS": ["Android", "iOS", "macOS", "Windows"],
-      "Deployment Stores": ["Play Store Deployment", "App Store Deployment"],
+
+      "Release & Deployment": [
+        "Google Play Console",
+        "App Store Connect",
+        "Android/iOS Releases",
+        "SDK Upgrades",
+        "Dependency Management",
+      ],
     },
+
     softSkills: [
-      "Analytical and problem-solving skills",
-      "Debugging and troubleshooting ability",
-      "Cross-functional teamwork",
-      "Time and task management",
-      "Quick learner of new technologies",
-      "Attention to detail and code quality",
-      "Agile development experience",
+      "Technical Ownership",
+      "Problem Solving & Debugging",
+      "Systematic Troubleshooting",
+      "Cross-functional Collaboration",
+      "Code Review & Knowledge Sharing",
+      "Junior Developer Mentoring",
+      "Production Issue Resolution",
+      "Agile Development",
+      "Technical Documentation",
     ],
   },
 
   socialMedia: {
     label: "SOCIAL",
+
     social: [
       {
         label: "Visit Dainy Jose's LinkedIn profile",
@@ -81,151 +111,167 @@ export const resumeData = {
       },
     ],
   },
+
   experience: {
     works: [
       {
-        title: "React Native Mobile Application Developer",
-        period: "13/03/2024 - Present",
+        title: "Senior Software Developer",
+        period: "Aug 2026 - Present",
         company: "Soverg Private Limited",
+
         description: [
-          "Maintained and improved the existing React Native project architecture and build configurations.",
-          "Handled project upgrades and dependency updates, ensuring compliance with Google Play Store and Apple App Store policies.",
-          "Implemented social authentication using Google, Facebook, and Apple Sign-In.",
-          "Developed location-based features including geofencing and real-time tracking.",
-          "Integrated Razorpay and PayU payment gateways for secure transactions.",
-          "Implemented push notifications using Firebase Cloud Messaging (FCM).",
-          "Managed application state using Redux and Context API.",
-          "Integrated Firebase Crashlytics and Analytics for monitoring and debugging.",
-          "Optimized application performance and improved UI responsiveness.",
-          "Debugged and resolved native module and build issues across Android and iOS.",
-          "Deployed applications to Google Play Store and Apple App Store and maintained version control using Git and Bitbucket.",
+          "Taking technical ownership of React Native features across Android and iOS, from planning and implementation to testing and release.",
+          "Working closely with backend, QA, and UI/UX teams to define business logic, API requirements, and reliable solutions.",
+          "Contributing to code reviews, technical discussions, architecture decisions, and mentoring junior developers.",
+          "Investigating production issues and improving application stability, performance, and overall development quality.",
         ],
       },
+
+      {
+        title: "Software Developer",
+        period: "Mar 2024 - Jul 2026",
+        company: "Soverg Private Limited",
+
+        description: [
+          "Maintained and improved React Native application architecture, build configurations, and production workflows across Android and iOS.",
+          "Implemented authentication, KYC, location-based features, payment integrations, push notifications, analytics, and application state management.",
+          "Integrated Razorpay, PayU, Firebase Cloud Messaging, Firebase Analytics, and Firebase Crashlytics into production applications.",
+          "Implemented complex booking and product availability workflows involving collection, return, start, and end dates, product stock, and sequential booking logic.",
+          "Investigated and resolved native module, dependency, build, runtime, and production issues across Android and iOS.",
+          "Managed Android and iOS releases, dependency upgrades, SDK and target API updates, and Play Store/App Store compliance requirements.",
+          "Collaborated with backend, QA, and UI/UX teams to define API requirements, business logic, edge cases, and end-to-end solutions.",
+          "Optimized application performance, UI responsiveness, and production stability through debugging and continuous improvements.",
+        ],
+      },
+
       {
         title: "React Native Mobile Application Developer",
-        period: "01/11/2022 - 29/02/2024",
+        period: "Nov 2022 - Feb 2024",
         company: "Doctor(s) Note Private Limited",
+
         description: [
           "Developed mobile and web applications from scratch using React Native, React.js, Node.js, and Express.js.",
-          "Designed MongoDB database schemas and implemented secure JWT authentication.",
 
-          "Integrated third-party APIs (SERP API) and Cloudinary for media handling.",
+          "Designed MongoDB schemas and implemented JWT-based authentication and REST APIs.",
 
-          "Tested performance across devices, ensured responsiveness and compatibility.",
+          "Integrated third-party services including SERP API and Cloudinary for external data and media management.",
 
-          "Deployed applications to Heroku, Netlify, and configured hosting environments.",
+          "Developed responsive interfaces and tested applications across multiple devices to ensure compatibility and performance.",
 
-          "Collaborated with cross-functional team for product-market fit.",
+          "Deployed applications using Heroku and Netlify and configured application hosting environments.",
+
+          "Collaborated with the development team to deliver features aligned with product requirements and user needs.",
         ],
       },
+
       {
         title: "Developer Intern",
-        period: "04/04/2022 - 03/10/2022",
+        period: "Apr 2022 - Oct 2022",
         company: "Evenion Technologies Private Limited",
+
         description: [
-          "Developed login and blog modules using ReactJS, HTML, CSS, and JavaScript.",
+          "Developed application modules using ReactJS, HTML, CSS, and JavaScript.",
 
-          "Implemented MySQL queries and optimized pages for speed, scalability, and security.",
+          "Implemented MySQL queries and contributed to application performance and security improvements.",
 
-          "Learned version control with Git & Subversion.",
+          "Worked with Git and Subversion in a collaborative development environment.",
         ],
       },
     ],
+
     academic: [
       {
         career: "Master of Computer Applications (MCA)",
         date: "2022",
         institution: "Jyoti Nivas Autonomous College, Bangalore",
-        percentage: "66.72% ",
       },
+
       {
         career: "BSc. Mathematics",
         date: "2020",
-        institution: "Providence Women's College, Calicut, Kerala ",
-        percentage: "64.7% ",
+        institution: "Providence Women's College, Calicut, Kerala",
       },
     ],
+
     projects: [
       {
         id: 1,
         title: "RN Expo Bare Template",
         description:
-          "A boilerplate React Native project using Expo Bare Workflow and TypeScript with preconfigured navigation, Redux, and environment management for faster project initialization.",
-        technologies:
-          "React Native | Expo | TypeScript | Redux | React Navigation",
+          "A reusable React Native starter template using Expo Bare Workflow and TypeScript with preconfigured navigation, Redux, and environment management to accelerate project initialization.",
+        technologies: "React Native | Expo | TypeScript | Redux | React Navigation",
         github: "https://github.com/dainyjose/rn-expo-typescript-bare-template",
       },
+
       {
         id: 2,
         title: "Location Sharing Server",
         description:
-          "Backend service for real-time location sharing, supporting socket communication and REST APIs for seamless integration with mobile apps.",
-        technologies: "Node.js | Express.js | Socket.io | MySQL | REST API",
+          "Backend service for real-time location sharing using Socket.IO and REST APIs, designed to support live tracking features in mobile applications.",
+        technologies: "Node.js | Express.js | Socket.IO | MySQL | REST API",
         github: "https://github.com/dainyjose/Location-sharing-server-side",
       },
+
       {
         id: 3,
         title: "FCM Push Server",
         description:
-          "A Node.js server setup for sending push notifications to mobile apps using Firebase Cloud Messaging, including topic-based and direct messaging support.",
+          "Node.js backend service for sending Firebase Cloud Messaging notifications with support for topic-based and direct messaging.",
         technologies: "Node.js | Firebase Cloud Messaging | Express.js",
         github: "https://github.com/dainyjose/firebase-cloud-messaging-node",
       },
+
       {
         id: 4,
         title: "Face Detection App",
         description:
-          "A React Native proof-of-concept app for detecting faces in real-time using camera integration and ML-based detection libraries.",
+          "React Native proof-of-concept exploring real-time face detection using camera integration and ML-based processing.",
         technologies: "React Native | Vision Camera | ML Kit | TypeScript",
         github: "https://github.com/dainyjose/face-detection-app",
       },
+
       {
         id: 5,
         title: "Tidio Chatbot Support",
         description:
-          "Integration of Tidio chatbot into a React app, enabling automated support and real-time chat with users for better engagement.",
-        technologies: "React Native | TypeScript | Tidio Chatbot",
+          "Integrated Tidio chatbot support into a React Native application to provide automated customer assistance and real-time user communication.",
+        technologies: "React Native | TypeScript | Tidio",
         github: "https://github.com/dainyjose/tidio_chatbot_support",
-      },
-      {
-        id: 6,
-        title: "Search Using Fuse.js",
-        description:
-          "Implementation of fuzzy search functionality using Fuse.js to provide fast and flexible search across datasets in a React application.",
-        technologies: "React Native | TypeScript | Fuse.js",
-        github: "https://github.com/dainyjose/search_using_fuse_js",
       },
     ],
   },
-  hobbies: ["Craft Making", "Coding", "Pet Keeping", "Gardening"],
+
   devBlogs: [
     {
-      title: "Google Play’s 16KB Page Size Limit Explained",
+      title: "Google Play’s 16 KB Page Size Limit Explained",
       description:
-        "Optimizing your Android builds for better performance and compliance with Play Store rules.",
+        "Explaining Android 16 KB page size requirements, build compatibility, and Play Store compliance.",
       url: "https://dev.to/dainyjose/understanding-google-plays-16-kb-page-size-requirement-for-android-apps-phd",
     },
     {
       title: "Push Notifications with Firebase + Notifee",
       description:
-        "Step-by-step setup for implementing push notifications in React Native.",
+        "A practical guide to implementing push notifications in React Native using Firebase Cloud Messaging and Notifee.",
       url: "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-ahl",
     },
     {
-      title: "Life of a React Native Developer",
+      title: "Complete CI/CD Guide for React Native Apps Using GitHub Actions",
       description:
-        "Sharing lessons learned while building and publishing apps from scratch.",
-      url: "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-nnb",
+        "A practical guide to automating React Native builds, testing, and deployment using GitHub Actions.",
+      url: "https://dev.to/dainyjose/complete-cicd-guide-for-react-native-apps-using-github-actions-4hh1",
     },
   ],
+
   footer: {
     developer: "Dainy Jose",
+
     socials: [
       {
         name: "LinkedIn",
         icon: "bx bxl-linkedin-square",
         url: "https://www.linkedin.com/in/dainyjose",
       },
+
       {
         name: "GitHub",
         icon: "bx bxl-github",
@@ -237,6 +283,7 @@ export const resumeData = {
         icon: "bx bx-link",
         url: "https://dainyjose.github.io/my-portfolio/",
       },
+
       {
         name: "Dev.to",
         icon: "bx bxl-dev-to",

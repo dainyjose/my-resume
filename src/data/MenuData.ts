@@ -35,10 +35,5 @@ export const menuData = {
       section: "#devblogs",
       className: "bx-news",
     },
-    {
-      label: "Hobbies",
-      section: "#hobbies",
-      className: "bx-heart",
-    },
   ],
 };
