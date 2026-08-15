@@ -15,7 +15,7 @@ export const DevBlogs: React.FC<DevBlogsProps> = ({ blogs }) => {
 
   return (
     <section className="dev-blogs section" id="blogs">
-      <h2 className="section-title">Dev Blogs</h2>
+      <h2 className="section-title">Technical Writing</h2>
       <div className="blogs__container bd-grid">
         {blogs.map((blog, index) => (
           <div className="blog__card" key={index}>
@@ -24,12 +24,7 @@ export const DevBlogs: React.FC<DevBlogsProps> = ({ blogs }) => {
               <p className="blog__description">{blog.description}</p>
             </div>
             <div className="blog__footer">
-              <a
-                href={blog.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="blog__link"
-              >
+              <a href={blog.url} target="_blank" rel="noopener noreferrer" className="blog__link">
                 Read More →
               </a>
             </div>

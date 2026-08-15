@@ -2,7 +2,6 @@ interface AcademyItem {
   career: string;
   date: string;
   institution: string;
-  percentage: string;
 }
 
 interface AcademicProps {
@@ -14,7 +13,7 @@ export const Academic: React.FC<AcademicProps> = ({ academic }) => {
     <section className="academic-experience section" id="education">
       <h2 className="section-title">Education</h2>
       <div className="education__container bd-grid">
-        {academic.map((academy) => (
+        {academic.map(academy => (
           <Academy key={academy.institution} {...academy} />
         ))}
       </div>
@@ -22,7 +21,7 @@ export const Academic: React.FC<AcademicProps> = ({ academic }) => {
   );
 };
 
-const Academy = ({ career, date, institution, percentage }: AcademyItem) => {
+const Academy = ({ career, date, institution }: AcademyItem) => {
   return (
     <div className="education__content">
       <div className="education__time">
@@ -32,9 +31,7 @@ const Academy = ({ career, date, institution, percentage }: AcademyItem) => {
       <div className="education__data bd-grid">
         <h3 className="education__title">{career}</h3>
 
-        <span className="education__studies">
-          {institution + " - " + date + " (" + percentage + ")"}
-        </span>
+        <span className="education__studies">{institution + " - " + date}</span>
       </div>
     </div>
   );
