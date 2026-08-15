@@ -623,8 +623,8 @@ button.generate__btn {
 
 @media print {
   @page {
-    size: auto;
-    margin: 0mm;
+    size: A4;
+    margin: 3mm;
   }
 
   html {
@@ -633,12 +633,10 @@ button.generate__btn {
     -webkit-print-color-adjust: exact;
   }
 
-  /* Show elements meant only for print */
   .print {
     display: block !important;
   }
 
-  /* Hide elements not meant for print */
   .no-print,
   .generate__btn,
   .menu,
@@ -647,24 +645,20 @@ button.generate__btn {
   }
 
   .bd-container {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
+    margin: 0 auto;
   }
 
   .resume {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    width: 100%;
   }
 
   .resume__left,
   .resume__right {
     padding: 0 1.5rem;
     height: auto !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
   }
 
   .resume__left {
@@ -678,6 +672,7 @@ button.generate__btn {
   .section-title {
     margin-bottom: var(--mb-0-25);
     text-align: initial;
+    break-after: avoid;
     page-break-after: avoid;
   }
 
@@ -702,16 +697,35 @@ button.generate__btn {
     gap: 0.9rem;
   }
 
-  /* Prevent content split */
-  section,
-  .section {
-    page-break-inside: avoid;
-    break-inside: avoid;
+  /*
+   * Allow the resume itself to flow
+   * naturally across pages.
+   */
+  .resume,
+  .resume__left,
+  .resume__right {
+    /* break-inside: auto; */
+    /* page-break-inside: auto; */
   }
 
-  /* Limit experience items for print readability */
-  .experience__content:nth-child(n + 5) {
-    display: none;
+  /*
+   * Keep individual sections together
+   * when possible.
+   */
+  .section {
+    /* break-inside: avoid; */
+    /* page-break-inside: avoid; */
+  }
+
+  /*
+   * Keep individual experience/education/project
+   * entries together.
+   */
+  .experience__content,
+  .education__content,
+  .projects__content {
+    /* break-inside: avoid; */
+    /* page-break-inside: avoid; */
   }
 
   .social__link {
