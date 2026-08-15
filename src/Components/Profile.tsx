@@ -1,6 +1,6 @@
 import { BoxIcon } from "./BoxIcon";
 import { Options } from "./Options";
-import profileImg from "../assets/dainy_jose.jpg";
+import profileImg from "../assets/dainy_jose.jpeg";
 
 type SocialItem = {
   label: string;
@@ -35,11 +35,7 @@ export const Profile = ({
       <Options />
       <div className="home__container bd-grid">
         <div className="home__data bd-grid">
-          <img
-            src={profileImg}
-            alt="profile_image"
-            className="home__img no-print"
-          />
+          <img src={profileImg} alt="profile_image" className="home__img no-print" />
           <h1 className="home__title">{name}</h1>
           <h3 className="home__profession">{occupation}</h3>
           <span className="home__information no-print">
@@ -60,8 +56,7 @@ export const Profile = ({
             label={`Call by phone to ${name}`}
             url={`tel:${telephone}`}
           />
-          {true &&
-            social.map((social) => <BoxIcon key={social.name} {...social} />)}
+          {true && social.map(social => <BoxIcon key={social.name} {...social} />)}
         </div>
       </div>
     </section>
